@@ -97,10 +97,10 @@ def zadanie2_12(text) -> None:
 #Wskazówka: można skorzystać z funkcji sum().
 def zadanie2_13(text) -> None:
     words = text.split()
-    lista = []
+    counter = 0
     for i in words:
-        lista.append(len(i))
-    print(f"Laczna dlugosc wyrazow w napisie line = {sum(lista)}\n")
+        counter += len(i)
+    print(f"Laczna dlugosc wyrazow w napisie line = {counter}\n")
 
 
 #Zadanie 2.14
@@ -181,7 +181,7 @@ def main() -> None:
     #zadanie2_10(line)
     #zadanie2_11(word)
     #zadanie2_12(line_2)
-    #zadanie2_13(line)
+    zadanie2_13(line)
     #zadanie2_14(line)
     #zadanie2_15(L)
     #zadanie2_16(line_3)
