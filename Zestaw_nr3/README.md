@@ -47,4 +47,4 @@ Brak argumentów w funkcji pow(), można użyć wyrażenia lambda
 
 W pliku `Main.py` znajdują sie rozwiązania do zadań od 3.3 do 3.10 bez 3.7.<br>
 Każde zadanie ma swoją funkcje czyli np. zadanie 3.10 ma funkcje ` zadanie3_10() `<br>
-Aby skorzystać z danej funkcji wystarczy w głównej funkcji (`main()`) odkomentować daną funckje.   
+Aby skorzystać z danej funkcji wystarczy w głównej funkcji (`main()`) odkomentować daną funkcję.   
