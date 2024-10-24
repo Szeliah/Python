@@ -4,11 +4,11 @@
 
 ##### Czy podany kod jest poprawny składniowo w Pythonie? Jeśli nie, to dlaczego?
 
-`x = 2; y = 3;`
-`if (x > y):`
-`    result = x;`
-`else:`
-    `result = y;`
+`x = 2; y = 3;`<br>
+`if (x > y):`<br>
+`    result = x;`<br>
+`else:`<br>
+    `result = y;`<br>
 Tutaj jest wszystko ok, poza tym że średniki nie są wymagane.
 
 ` for i in "axby": if ord(i) < 100: print (i) `
