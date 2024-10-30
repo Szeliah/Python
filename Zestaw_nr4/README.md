@@ -6,4 +6,4 @@
 ---
 W pliku `Main.py` znajdują sie rozwiązania do zadań od 4.2 do 4.7. <br>
 Każde zadanie ma swoją funkcje czyli np. zadanie 4.4 ma funkcje `fibonacci(n)` <br>
-Aby skorzystać z danej funkcji wystarczy w głównej funkcji (`main()`) odkomentować/zakomentować daną funkcje.   
+Zrobionio testy z wykorzysatniem assert result == expected_result, każde zadania ma swoją funkcje testową.   
