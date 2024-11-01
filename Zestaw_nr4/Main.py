@@ -22,8 +22,6 @@ def is_natural_number(string) -> bool:
 # które zwracają pełny string przez return.
 #Funkcje nie powinny pytać użytkownika o dane
 # tylko korzystać z argumentów.
-#def make_ruler(n): pass
-#def make_grid(rows, cols): pass
 def make_ruler(n):
     if not is_natural_number(n):
         raise ValueError("Bledne dane!")
@@ -35,9 +33,11 @@ def make_ruler(n):
     first_part += '|\n'
 
     second_part = ''
-    for i in range(length + 1):
+    i = 0
+    for i in range(length):
         number = str(i)
         second_part += number + (" " * (5 - (len(str(i + 1)))))
+    second_part += str(i + 1)
 
     ruler = first_part + second_part
     return ruler
@@ -161,23 +161,99 @@ def flatten(sequence) -> list:
     return lista
 
 
+# FUNKCJE TESTUJACE --------------------------------------------------------------------------------------
+#Test dla zadania 4.2
+def test_zadania4_2() -> None:
+    #testy dla make_ruler()
+    result_1 = make_ruler(3)
+    expected_result_1 = "|....|....|....|\n0    1    2    3"
+    assert result_1 == expected_result_1, f"Test nie udany, otrzymany wynik:\n{result_1}\nWynik oczekiwany:\n{expected_result_1}"
+    result_2 = make_ruler(12)
+    expected_result_2 = "|....|....|....|....|....|....|....|....|....|....|....|....|\n0    1    2    3    4    5    6    7    8    9   10   11   12"
+    assert result_2 == expected_result_2, f"Test nie udany, otrzymany wynik:\n{result_2}\nWynik oczekiwany:\n{expected_result_2}"
 
-def main() -> None:
-    # print(make_ruler(5))
-    # print(make_grid(3, 5))
-    # print(factorial(6))
-    # print(fibonacci(12))
+    #testy dla make_grid()
+    result_3 = make_grid(2, 2)
+    expected_result_3 = "+---+---+\n|   |   |\n+---+---+\n|   |   |\n+---+---+"
+    assert result_3 == expected_result_3, f"Test nie udany, otrzymany wynik:\n{result_3}\nWynik oczekiwany:\n{expected_result_3}"
+    result_4 = make_grid(4, 4)
+    expected_result_4 = "+---+---+---+---+\n|   |   |   |   |\n+---+---+---+---+\n|   |   |   |   |\n+---+---+---+---+\n|   |   |   |   |\n+---+---+---+---+\n|   |   |   |   |\n+---+---+---+---+"
+    assert result_4 == expected_result_4, f"Test nie udany, otrzymany wynik:\n{result_4}\nWynik oczekiwany:\n{expected_result_4}"
+
+
+#Test dla zadania 4.3
+def test_zadania4_3() -> None:
+    result_1 = fibonacci(0)
+    expected_result_1 = 0
+    assert result_1 == expected_result_1, f"Test nie udany, otrzymany wynik:\n{result_1}\nWynik oczekiwany:\n{expected_result_1}"
+    result_2 = fibonacci(10)
+    expected_result_2 = 55
+    assert result_2 == expected_result_2, f"Test nie udany, otrzymany wynik:\n{result_2}\nWynik oczekiwany:\n{expected_result_2}"
+    result_3 = factorial(7)
+    expected_result_3 = 5040
+    assert result_3 == expected_result_3, f"Test nie udany, otrzymany wynik:\n{result_3}\nWynik oczekiwany:\n{expected_result_3}"
+
+
+# Test dla zadania 4.4
+def test_zadania4_4() -> None:
+    result_1 = factorial(0)
+    expected_result_1 = 1
+    assert result_1 == expected_result_1, f"Test nie udany, otrzymany wynik:\n{result_1}\nWynik oczekiwany:\n{expected_result_1}"
+    result_2 = factorial(2)
+    expected_result_2 = 2
+    assert result_2 == expected_result_2, f"Test nie udany, otrzymany wynik:\n{result_2}\nWynik oczekiwany:\n{expected_result_2}"
+
+
+#Test dla zadania 4.5
+def test_zadania4_5() -> None:
     L_1 = [1, 2, 3, 4, 5]
     L_2 = [5, 6, 7, 8, 9]
+
     odwracanie_iter(L_1, 2, 4)
+    result_1 = L_1
+    expected_result_1 = [1, 2, 5, 4, 3]
+    assert result_1 == expected_result_1, f"Test nie udany, otrzymany wynik:\n{result_1}\nWynik oczekiwany:\n{expected_result_1}"
     odwracanie_rek(L_2, 2, 4)
-    print(L_1)
-    print(L_2)
+    result_2 = L_2
+    expected_result_2 = [5, 6, 9, 8, 7]
+    assert result_2 == expected_result_2, f"Test nie udany, otrzymany wynik:\n{result_2}\nWynik oczekiwany:\n{expected_result_2}"
+
+
+# Test dla zadania 4.6
+def test_zadania4_6() -> None:
     seq_1 = [1, [2], [3, 4], 5, (6, 7, [8, 9]), 10]
     seq_2 = [1, 2, [2, 3], 9, (10 , 10)]
-    print(sum_seq(seq_1))
-    print(flatten(seq_2))
 
+    result_1 = sum_seq(seq_1)
+    expected_result_1 = 55
+    assert result_1 == expected_result_1, f"Test nie udany, otrzymany wynik:\n{result_1}\nWynik oczekiwany:\n{expected_result_1}"
+    result_2 = sum_seq(seq_2)
+    expected_result_2 = 37
+    assert result_2 == expected_result_2, f"Test nie udany, otrzymany wynik:\n{result_2}\nWynik oczekiwany:\n{expected_result_2}"
+
+
+# Test dla zadania 4.7
+def test_zadania4_7() -> None:
+    seq_1 = [1, [2], [3, 4], 5, (6, 7, [8, 9]), 10]
+    seq_2 = [1, 2, [2, 3], 9, (10 , 10)]
+
+    result_1 = flatten(seq_1)
+    expected_result_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    assert result_1 == expected_result_1, f"Test nie udany, otrzymany wynik:\n{result_1}\nWynik oczekiwany:\n{expected_result_1}"
+    result_2 = flatten(seq_2)
+    expected_result_2 = [1, 2, 2, 3, 9, 10, 10]
+    assert result_2 == expected_result_2, f"Test nie udany, otrzymany wynik:\n{result_2}\nWynik oczekiwany:\n{expected_result_2}"
+
+
+
+def main() -> None:
+    test_zadania4_2()
+    test_zadania4_3()
+    test_zadania4_4()
+    test_zadania4_5()
+    test_zadania4_6()
+    test_zadania4_7()
+    print("Testy udane")
 
 if __name__  == "__main__":
     main()
