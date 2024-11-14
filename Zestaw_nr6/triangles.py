@@ -3,7 +3,6 @@
 #Zadania z zajec z dnia 13.11.2024
 #Autor: Szymon Szeliga
 
-from select import select
 from math import sqrt
 
 # Zadanie 6.4
