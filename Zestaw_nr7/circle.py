@@ -57,7 +57,7 @@ class Circle:
         #Czy mniejszy okrag znajduje się cały w okregu wiekszym
         if r1 + distance <= r2:
             return Circle(x2, y2, r2)
-        else:
+        else:                                # obliczanie na podstawie promieni i dystansu
             r3 = (distance + r1 + r2) / 2
             factor = 0.5 + (r2 - r1) / (2 * distance)
             x3 = (1 - factor) * x1 + factor * x2
