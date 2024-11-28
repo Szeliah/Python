@@ -74,8 +74,10 @@ class Circle:
 
     @classmethod
     def from_points(cls, points):
-        if len(points) is not 3 and not cls.is_non_collinear_points(points[0], points[1], points[2]):
-            raise ValueError("Bledna ilosc danych lub punkty są wspóliniowe")
+        if len(points) != 3:
+            raise ValueError("Bledna ilosc danych")
+        if not cls.is_non_collinear_points(points[0], points[1], points[2]):
+            raise ValueError("Punkty są wspóliniowe")
 
         P1, P2, P3 = points
 
