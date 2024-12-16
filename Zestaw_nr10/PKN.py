@@ -1,6 +1,6 @@
 #JEZYK PYTHON
 #GRUPA CWICZENIOWA 02
-#Zadania z zajec z dnia 04.12.2024
+#Zadania z zajec z dnia 11.12.2024
 #Autor: Szymon Szeliga
 
 
