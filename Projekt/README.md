@@ -25,7 +25,7 @@ W moim przypadku użyłem algorytmu Graham scan w którym:
 ## Rotating calipers
 Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używam algorytmu rotating calipers, w którym:
 1. Znajuduję punkt `max_point` o największych współrzędnych x i y  (złożoność czasowa tej operacji to O($n$)).
-2. Potem zaczynam sprawdzać kąty, który utworzą nasze "zaciski" i od razu wyliczam odległość od punktów przeciwległych, które mogą być potencjalnie parą najdalszych punktów (złożoność czasowa tej operacji to O($n$)).
+2. Potem zaczynam sprawdzać kąty, który utworzą nasze "zaciski" i od razu wyliczam dystans pomiędzy punktami przeciwległymi, które mogą być potencjalną parą najdalszych punktów (złożoność czasowa tej operacji to O($n$)).
 
 ![Obraz rotating calipers](Pictures/calipers.gif)
 
