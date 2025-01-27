@@ -10,7 +10,7 @@ Pierwszym i zarazem najprostszym, ale nieoptymalnym sposobem (złożoność czas
 
 Lepszym (złożoność czasowa $nlogn$) jest wyznaczenie na początku otoczki wypukłej (convex hull) a następnie użycie metody rotating calipers.
 
-Otoczka wypukła to nic innego jak najmniejszy wielokąt, który zawiera wszytkie punkty. Poniżej znajduje się przykładowy convex hull.
+Otoczka wypukła to nic innego jak najmniejszy wielokąt wypukły, który zawiera wszytkie punkty. Poniżej znajduje się przykładowy convex hull.
 
 ![Obraz otoczki wypukłej](Pictures/convex_hull.png)
 
