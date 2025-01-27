@@ -34,7 +34,7 @@ Korzystam z faktu,
    
 
 ### Pomocna literatura
-https://www.cs.kent.edu/~dragan/CG/CG-Book.pdf - Opis (dłuższy) algorytmu Graham scan, szukanie srednicy convex hull (czyli szukanie pary najdalszych punktów) oraz wiele wiecej informacji odnośnie geometrii obliczeniowej.
-https://en.wikipedia.org/wiki/Rotating_calipers - Opis (krótszy) odnośnie alogrytmu rotating calipers.
-https://en.wikipedia.org/wiki/Graham_scan - Opis (krótszy) algorytmu Graham scan.
+https://www.cs.kent.edu/~dragan/CG/CG-Book.pdf - Opis (dłuższy) algorytmu Graham scan, szukanie srednicy convex hull (czyli szukanie pary najdalszych punktów) oraz wiele wiecej informacji odnośnie geometrii obliczeniowej. <br/>
+https://en.wikipedia.org/wiki/Rotating_calipers - Opis (krótszy) odnośnie alogrytmu rotating calipers. <br/>
+https://en.wikipedia.org/wiki/Graham_scan - Opis (krótszy) algorytmu Graham scan. <br/>
 https://delibra.bg.polsl.pl/Content/64514/BCPS-73378_1994_Algorytm-wyznaczania.pdf - Proces (po polsku) wyznaczania otoczki wypukłej i pary najdalszych punktów.
