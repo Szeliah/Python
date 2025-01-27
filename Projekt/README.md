@@ -11,7 +11,7 @@ Lepszym (złożoność czasowa nlogn) jest wyznaczenie na początku otoczki wypu
 
 Otoczka wypukła to nic innego jak najmniejszy wielokat, który zawiera wszytkie punkty. Poniżej znajduje się przykadowy convex hull.
 
-![Obraz otoczki wypukłej](https://www.researchgate.net/publication/325578736/figure/fig1/AS:941731684044827@1601537738283/The-definition-of-convex-hull-In-the-figure-the-polygon-is-the-convex-hull-of-the-point.png)
+![Obraz otoczki wypukłej](Pictures/convex_hull.png)
 
 Wykonanie 
 
