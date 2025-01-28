@@ -21,11 +21,11 @@ Do wyznaczenia otoczki wypukłej mozna zastosować wiele algorytmów takich jak 
 W moim przypadku użyłem algorytmu Graham scan w którym:
 1. Na początku znajduję punkt `min_point` o najmniejszych współrzędnych x i y (złożoność czasowa tej operacji to O($n$)).
 2. Następnie zaczynam sortować te punkty względem punktu `min_point`(sotruję punkty ze wzgledu na kąt (rosnąco) jaki tworzą razem z `min_point` oraz osia x) używając do tego iloczynu wektorowego oraz sortowania poprzez kopcowanie (złożoność czasowa tej operacji to O($nlogn$)).
-3. Potem zaczyam wyznaczać punkty, które utworza naszą otoczkę. Wykorzystuję do tego ponownie iloczyn wektorowy, który pomaga określic "orietnację punktów" czy punkty są ułożone zgodnie z ruchem wskazówek zagara czy też nie i na tej podstawie odrzucam punkty, które powinny zostać pominięte. (złożoność czasowa tej operacji to O($n$)).
+3. Potem zaczyam wyznaczać punkty, które utworza naszą otoczkę. Wykorzystuję do tego ponownie iloczyn wektorowy, który pomaga określic "orietnację punktów" -> czy punkty są ułożone zgodnie z ruchem wskazówek zagara czy też nie. (złożoność czasowa tej operacji to O($n$)).
 
 ### Rotating calipers
 Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używam algorytmu rotating calipers, w którym:
-1. Znajuduję punkt `max_point` o największych współrzędnych x i y  (złożoność czasowa tej operacji to O($n$)).
+1. Znajuduję punkt `max_point` o największych współrzędnych y i x  (złożoność czasowa tej operacji to O($n$)).
 2. Potem zaczynam sprawdzać kąty, który utworzą nasze "zaciski" i od razu wyliczam dystans pomiędzy punktami przeciwległymi, które mogą być potencjalną parą najdalszych punktów (złożoność czasowa tej operacji to O($n$)).
 
 ![Obraz rotating calipers](Pictures/calipers.gif)
