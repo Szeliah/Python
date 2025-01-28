@@ -2,8 +2,9 @@
 # Wyznaczanie pary najdalszych punktów
 ## Spis treści 
 1. [Opis problemu](#opis-problemu)
-2. [Uruchamianie](#uruchamianie)
-3. [Pomocna literatura](#pomocna-literatura)
+2. [Opis zawartości plików](#opis-zawartości-plików)
+3. [Uruchamianie](#uruchamianie)
+4. [Pomocna literatura](#pomocna-literatura)
 ### Opis problemu
 Mając dany zbiór punktów na płaszczyźnie 2D należy znaleźć parę punktów najdalej od siebie oddalonych.
 Pierwszym i zarazem najprostszym, ale nieoptymalnym sposobem (złożoność czasowa O($n^2$)) jest policzenie odległości miedzy wszystkimi parami punktów.
@@ -29,8 +30,13 @@ Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używ
 
 ![Obraz rotating calipers](Pictures/calipers.gif)
 
+### Opis zawartosc plików
+`main.py` -  w nim wykonywane są testy na przykałdowych punktach. <br/>
+`read_file.py`  -  w nim znajduje się funkcja służąca do odczytwania punktów z pliku txt. <br/>
+`comapre.py` - 
+
 ### Uruchamianie
-   
+
 
 ### Pomocna literatura
 https://www.cs.kent.edu/~dragan/CG/CG-Book.pdf - Opis (dłuższy) algorytmu Graham scan, szukanie srednicy convex hull (czyli szukanie pary najdalszych punktów) oraz wiele wiecej informacji odnośnie geometrii obliczeniowej. <br/>
