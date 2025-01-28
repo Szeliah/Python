@@ -13,7 +13,7 @@ Lepszym (złożoność czasowa O($nlogn$)) sposobem jest wyznaczenie na początk
 
 Otoczka wypukła to nic innego jak najmniejszy wielokąt wypukły, który zawiera wszytkie punkty. Poniżej znajduje się przykładowy convex hull.
 
-![Obraz otoczki wypukłej](Pictures/convex_hull.png)
+<img src="Pictures/convex_hull.png" alt="Alt Text" width="400" height="400">
 
 
 Do wyznaczenia otoczki wypukłej mozna zastosować wiele algorytmów takich jak np. Gift wrapping, Quickhull czy Monotone chain.
