@@ -52,7 +52,6 @@ Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używ
  <br/>
 `points_3.txt`:<br/>
 <br/>
-<br/>
 <img src="Pictures/points_3.png" alt="Alt Text" width="400" height="400">
 
 ### Uruchamianie
