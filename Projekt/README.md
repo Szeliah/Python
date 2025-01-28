@@ -39,7 +39,7 @@ Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używ
 `convex_hull.py` - funkcja wyznaczająca punkty, które tworzą otoczkę wypukłą <br/>
 `rotating_calipers.py` - funkcja wyzaczająca maksymalna odległość pomiędzy punktami. <br/>
 `Data` - folder w którym znajdują się przykładowe punkty zapisane w plikach .txt <br/>
-####Przykładowe zbiory punktów:
+#### Przykładowe zbiory punktów:
 `points_1.txt`:
 ![points_1](Pictures/points_1.png)
  <br/>
