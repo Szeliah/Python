@@ -38,7 +38,16 @@ Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używ
 `heap.py` - funkcje budujące kopiec i sortujące (heapsort) <br/>
 `convex_hull.py` - funkcja wyznaczająca punkty, które tworzą otoczkę wypukłą <br/>
 `rotating_calipers.py` - funkcja wyzaczająca maksymalna odległość pomiędzy punktami. <br/>
-`Data` - folder w którym znajdują się przykładowe punkty zapisane w plikach .txt
+`Data` - folder w którym znajdują się przykładowe punkty zapisane w plikach .txt <br/>
+####Przykładowe zbiory punktów:
+`points_1.txt`:
+![points_1](Pictures/points_1.png)
+ <br/>
+`points_2.txt`:
+![points_2](Pictures/points_2.png)
+ <br/>
+`points_3.txt`:
+![points_3](Pictures/points_3.png)
 
 ### Uruchamianie
 Wystarczy uruchomić `main.py` (skorzystałem z moduły pytest do testowania).
@@ -48,7 +57,7 @@ Jeżeli chcemy przetestować działanie algorytmu na własnych punktach należy 
 Co oznacza że mamy dwa punkty (5, 5) oraz (-3, 2).
 
 ### Pomocna literatura
-https://www.cs.kent.edu/~dragan/CG/CG-Book.pdf - Opis (dłuższy) algorytmu Graham scan, szukanie srednicy convex hull (czyli szukanie pary najdalszych punktów) oraz wiele wiecej informacji odnośnie geometrii obliczeniowej. <br/>
+https://www.cs.kent.edu/~dragan/CG/CG-Book.pdf - Opis (dłuższy) algorytmu Graham scan, szukanie srednicy convex hull (czyli szukanie pary najdalszych punktów) oraz wiele więcej informacjii odnośnie geometrii obliczeniowej. <br/>
 https://en.wikipedia.org/wiki/Rotating_calipers - Opis (krótszy) odnośnie alogrytmu rotating calipers. <br/>
 https://en.wikipedia.org/wiki/Graham_scan - Opis (krótszy) algorytmu Graham scan. <br/>
 https://delibra.bg.polsl.pl/Content/64514/BCPS-73378_1994_Algorytm-wyznaczania.pdf - Proces (po polsku) wyznaczania otoczki wypukłej i pary najdalszych punktów.
