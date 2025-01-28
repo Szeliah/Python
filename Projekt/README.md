@@ -44,11 +44,14 @@ Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używ
 <br/>
 <img src="Pictures/points_1.png" alt="Alt Text" width="400" height="400">
  <br/>
+ <br/>
 `points_2.txt`:<br/>
 <br/>
 <img src="Pictures/points_2.png" alt="Alt Text" width="400" height="400">
  <br/>
+ <br/>
 `points_3.txt`:<br/>
+<br/>
 <br/>
 <img src="Pictures/points_3.png" alt="Alt Text" width="400" height="400">
 
