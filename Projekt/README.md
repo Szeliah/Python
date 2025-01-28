@@ -41,18 +41,16 @@ Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używ
 `Data` - folder w którym znajdują się przykładowe punkty zapisane w plikach .txt <br/>
 #### Przykładowe zbiory punktów:
 `points_1.txt`:<br/>
-![points_1](Pictures/points_1.png)
+<br/>
+<img src="Pictures/points_1.png" alt="Alt Text" width="200" height="200">
  <br/>
 `points_2.txt`:<br/>
-![points_2](Pictures/points_2.png)
+<br/>
+<img src="Pictures/points_2.png" alt="Alt Text" width="200" height="200">
  <br/>
 `points_3.txt`:<br/>
-![points_3](Pictures/points_3.png)
-
-
-<img src="Pictures/points_1.png" alt="Alt Text" width="100" height="100">
-<img src="Pictures/points_2.png" alt="Alt Text" width="100" height="100">
-<img src="Pictures/points_3.png" alt="Alt Text" width="100" height="100">
+<br/>
+<img src="Pictures/points_3.png" alt="Alt Text" width="200" height="200">
 
 ### Uruchamianie
 Wystarczy uruchomić `main.py` (skorzystałem z moduły pytest do testowania).
