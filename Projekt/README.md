@@ -33,16 +33,16 @@ Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używ
 ### Zawartość plików
 `main.py` - testy na przykałdowych punktach. <br/>
 `read_file.py`  -  funkcja służąca do odczytwania punktów z pliku txt. <br/>
-`comapre.py` - funkcja porównująca kąt jaki tworzą punkty z osia x <br/>
+`comapre.py` - funkcja porównująca kąt jaki tworzą punkty z osią x <br/>
 `points.py` - klasa reprezentująca punkt <br/>
-`heap.py` - funkcje budujace kopiec i sortujące (heapsort) <br/>
+`heap.py` - funkcje budujące kopiec i sortujące (heapsort) <br/>
 `convex_hull.py` - funkcja wyznaczająca punkty, które tworzą otoczkę wypukłą <br/>
 `rotating_calipers.py` - funkcja wyzaczająca maksymalna odległość pomiędzy punktami. <br/>
 `Data` - folder w którym znajdują się przykładowe punkty zapisane w plikach .txt
 
 ### Uruchamianie
 Wystarczy uruchomić `main.py` (skorzystałem z moduły pytest do testowania).
-Jeżeli chcemy przetestować działanie algorytmu na własnych punktach należy przygotowawć zwykły plik .txt (lub uzyć jednego z 5, które znajdują się w folderze Data i podmienić zawartość) i zapisać punkty w formacie `a b` gdzie `a` to wartość x punktu a `b` to wartość y punktu. Liczby oddzielone są znakiem "spacji" czyli np. <br/>
+Jeżeli chcemy przetestować działanie algorytmu na własnych punktach należy przygotowawć zwykły plik .txt (lub uzyć jednego z 5, które znajdują się w folderze Data i podmienić zawartość) i zapisać punkty w formacie `a b` gdzie `a` to wartość x punktu, a `b` to wartość y punktu. Liczby oddzielone są znakiem "spacji" czyli np. <br/>
 5 5 <br/>
 -3 2 <br/>
 Co oznacza że mamy dwa punkty (5, 5) oraz (-3, 2).
