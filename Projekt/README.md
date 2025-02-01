@@ -27,8 +27,8 @@ wybierany jest punkt o najmniejszej współrzędnej x. (złożoność czasowa te
 ### Rotating calipers
 Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używam algorytmu rotating calipers, w którym:
 1. Znajuduję punkt `max_point` o największej wartości współrzędnej y. W przypadku, gdy istnieje więcej niż jeden punkt o tej samej wartości y, wybierany jest punkt o największej współrzędnej x.(złożoność czasowa tej operacji to O($n$)).
-2.Następnie sprawdzam kąty, które utworzą nasze 'zaciski', i jednocześnie obliczam dystans między punktami przeciwległymi, które mogą stanowić potencjalną parę najdalszych punktów (złożoność czasowa tej operacji to O($n$)). Obrót odbywa się w kierunku przeciwnym do ruchu wskazówek zegara.
-
+2.Następnie sprawdzam kąty, które utworzą nasze 'zaciski', i jednocześnie obliczam dystans między punktami przeciwległymi, które mogą stanowić potencjalną parę najdalszych punktów (złożoność czasowa tej operacji to O($n$)). Obrót odbywa się w kierunku przeciwnym do ruchu wskazówek zegara. <br/>
+UWAGA! rysunek poniżej jest poglądowy i u mnie obrót lini równoległych jest wykonwyany w lewą stronę a nie tak jak tam w prawo.
 ![Obraz rotating calipers](Pictures/calipers.gif)
 
 ### Zawartość plików
