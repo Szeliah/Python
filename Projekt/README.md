@@ -58,26 +58,27 @@ UWAGA! rysunek poniżej jest poglądowy i u mnie obrót lini równoległych jest
 <br/>
 `points_4.txt`:<br/>
 <br/>
-<img src="Pictures/points_1.png" alt="Alt Text" width="400" height="400">
+<img src="Pictures/points_4.png" alt="Alt Text" width="400" height="400">
  <br/>
  <br/>
 `points_5.txt`:<br/>
 <br/>
-<img src="Pictures/points_2.png" alt="Alt Text" width="400" height="400">
+<img src="Pictures/points_5.png" alt="Alt Text" width="400" height="400">
  <br/>
  <br/>
 `points_6.txt`:<br/>
 <br/>
-<img src="Pictures/points_3.png" alt="Alt Text" width="400" height="400">
+<img src="Pictures/points_6.png" alt="Alt Text" width="400" height="400">
 <br/>
 <br/>
 `points_7.txt`:<br/>
 <br/>
-<img src="Pictures/points_1.png" alt="Alt Text" width="400" height="400">
+<img src="Pictures/points_7.png" alt="Alt Text" width="400" height="400">
  <br/>
  <br/>
 `points_8.txt`:<br/>
 <br/>
+<img src="Pictures/points_8.png" alt="Alt Text" width="400" height="400">
 
 ### Uruchamianie
 Wystarczy uruchomić `main.py` (skorzystałem z moduły pytest do testowania).
