@@ -4,7 +4,9 @@ from compare import compare, short_compare
 
 # GRAHAM SCAN ALGORITHM
 
-# Funkcja zwraca punkt z najmniejszym y oraz x
+# Funkcja zwraca punkt o najmniejszej wartości współrzędnej y.
+# W przypadku, gdy istnieje więcej niż jeden punkt o tej samej wartości y,
+# wybierany jest punkt o najmniejszej współrzędnej x.
 def get_min_y(list_points):
     point_min_y = list_points[0]
 
@@ -17,7 +19,7 @@ def get_min_y(list_points):
     return point_min_y
 
 
-# Fynkcja sortuje punkty ze wzgeldu na kat jaki tworza z osia x oraz punktem min y
+# Fynkcja sortuje punkty ze wzgeldu na kąt jaki tworzą z osia x oraz punktem min_y
 def sort_by_angle(list_points, point_min_y):
     heap_sort(list_points, point_min_y)
 
@@ -27,6 +29,7 @@ def convex_hull(points):
     length = len(points)
     point_min_y = get_min_y(points)
     sort_by_angle(points, point_min_y)
+    print(points)
     if length < 3:
         points.reverse()
         return points
@@ -41,10 +44,6 @@ def convex_hull(points):
         stack.append(point)
         stack.append(next_point)
 
-
-    point = stack.pop()
-    if compare(stack[-1], point, point_min_y) == 1:
-        stack.append(point)
 
     for i in range(1, length - 1, 1):
         if points[i].x != stack[-1].x or points[i] == point_min_y or points[i] == stack[-1]:

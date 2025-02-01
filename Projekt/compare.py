@@ -24,7 +24,7 @@ def compare(min_y_point, p1, p2):
             return 1 if p1.x < p2.x else -1
 
 
-# Funkcja jak powyżej z drobną modifikacja
+# Funkcja jak powyżej z drobną modifikacją
 def short_compare(min_y_point, p1, p2):
     if p1 == min_y_point:
         return 1

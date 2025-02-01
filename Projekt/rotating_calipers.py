@@ -5,7 +5,9 @@ def distance(p1, p2):
     return math.sqrt((p1.x - p2.x)**2 + (p1.y - p2.y)**2)
 
 
-# Funkcja zwraca punkt z najwiekszym y oraz x
+# Funkcja zwraca punkt o największej wartości współrzędnej y.
+# W przypadku, gdy istnieje więcej niż jeden punkt o tej samej wartości y,
+# wybierany jest punkt o największej współrzędnej x.
 def get_max_y(list_points):
     point_min_y = list_points[0]
     for point in list_points[1:]:
@@ -33,7 +35,8 @@ def degree(p1, p2, flag):
         return angle if p1.x >= p2.x else 180 - angle
 
 
-# Funkcja wylicza dystans przeciwleglych punktow
+# Funkcja oblicza dystans między przeciwległymi punktami
+# i zwraca listę zawierającą największy dystans oraz punkty, które go tworzą.
 def rotating_calipers(points):
 
     result = []
@@ -135,6 +138,8 @@ def rotating_calipers(points):
 
             bottom_index = bottom_index + 1
             bottom_point = next_bottom_point
+            if bottom_index >= n:
+                break
             next_bottom_point = points[bottom_index]
             previous_bottom_agnle = bottom_angle
 
