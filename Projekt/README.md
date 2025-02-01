@@ -19,14 +19,15 @@ Otoczka wypukła to nic innego jak najmniejszy wielokąt wypukły, który zawier
 Do wyznaczenia otoczki wypukłej mozna zastosować wiele algorytmów takich jak np. Gift wrapping, Quickhull czy Monotone chain.
 ###  Graham scan 
 W moim przypadku użyłem algorytmu Graham scan w którym:
-1. Na początku znajduję punkt `min_point` o najmniejszych współrzędnych x i y (złożoność czasowa tej operacji to O($n$)).
+1. Na początku znajduję punkt `min_point` o najmniejszej wartości współrzędnej y. W przypadku, gdy istnieje więcej niż jeden punkt o tej samej wartości y,
+wybierany jest punkt o najmniejszej współrzędnej x. (złożoność czasowa tej operacji to O($n$)).
 2. Następnie zaczynam sortować te punkty względem punktu `min_point`(sotruję punkty ze wzgledu na kąt (rosnąco) jaki tworzą razem z `min_point` oraz osia x) używając do tego iloczynu wektorowego oraz sortowania poprzez kopcowanie (złożoność czasowa tej operacji to O($nlogn$)).
-3. Potem zaczyam wyznaczać punkty, które utworza naszą otoczkę. Wykorzystuję do tego ponownie iloczyn wektorowy, który pomaga określic "orietnację punktów" -> czy punkty są ułożone zgodnie z ruchem wskazówek zagara czy też nie. (złożoność czasowa tej operacji to O($n$)).
+4. Potem zaczyam wyznaczać punkty, które utworza naszą otoczkę. Wykorzystuję do tego ponownie iloczyn wektorowy, który pomaga określic "orietnację punktów" -> czy punkty są ułożone zgodnie z ruchem wskazówek zagara czy też nie. (złożoność czasowa tej operacji to O($n$)). U mnie obieganie wielokąta odbywa się w przeciwnym ruchu do wskazówek zegara.
 
 ### Rotating calipers
 Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używam algorytmu rotating calipers, w którym:
-1. Znajuduję punkt `max_point` o największych współrzędnych y i x  (złożoność czasowa tej operacji to O($n$)).
-2. Potem zaczynam sprawdzać kąty, który utworzą nasze "zaciski" i od razu wyliczam dystans pomiędzy punktami przeciwległymi, które mogą być potencjalną parą najdalszych punktów (złożoność czasowa tej operacji to O($n$)).
+1. Znajuduję punkt `max_point` o największej wartości współrzędnej y. W przypadku, gdy istnieje więcej niż jeden punkt o tej samej wartości y, wybierany jest punkt o największej współrzędnej x.(złożoność czasowa tej operacji to O($n$)).
+2.Następnie sprawdzam kąty, które utworzą nasze 'zaciski', i jednocześnie obliczam dystans między punktami przeciwległymi, które mogą stanowić potencjalną parę najdalszych punktów (złożoność czasowa tej operacji to O($n$)). Obrót odbywa się w kierunku przeciwnym do ruchu wskazówek zegara.
 
 ![Obraz rotating calipers](Pictures/calipers.gif)
 
@@ -37,9 +38,9 @@ Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używ
 `points.py` - klasa reprezentująca punkt <br/>
 `heap.py` - funkcje budujące kopiec i sortujące (heapsort) <br/>
 `convex_hull.py` - funkcja wyznaczająca punkty, które tworzą otoczkę wypukłą <br/>
-`rotating_calipers.py` - funkcja wyzaczająca maksymalna odległość pomiędzy punktami. <br/>
+`rotating_calipers.py` - funkcja wyznaczająca punkty przeciwlegle i obliczajaca ich dystans. Zwraca listę zawierającą największy dystans oraz punkty, które go tworzą. <br/>
 `Data` - folder w którym znajdują się przykładowe punkty zapisane w plikach .txt <br/>
-#### Przykładowe zbiory punktów:
+#### Przykładowe zbiory punktów które są testowane:
 `points_1.txt`:<br/>
 <br/>
 <img src="Pictures/points_1.png" alt="Alt Text" width="400" height="400">
@@ -53,6 +54,30 @@ Gdy uzyskam już punkty, które utworzą nam otoczke wypukłą, następnie używ
 `points_3.txt`:<br/>
 <br/>
 <img src="Pictures/points_3.png" alt="Alt Text" width="400" height="400">
+<br/>
+<br/>
+`points_4.txt`:<br/>
+<br/>
+<img src="Pictures/points_1.png" alt="Alt Text" width="400" height="400">
+ <br/>
+ <br/>
+`points_5.txt`:<br/>
+<br/>
+<img src="Pictures/points_2.png" alt="Alt Text" width="400" height="400">
+ <br/>
+ <br/>
+`points_6.txt`:<br/>
+<br/>
+<img src="Pictures/points_3.png" alt="Alt Text" width="400" height="400">
+<br/>
+<br/>
+`points_7.txt`:<br/>
+<br/>
+<img src="Pictures/points_1.png" alt="Alt Text" width="400" height="400">
+ <br/>
+ <br/>
+`points_8.txt`:<br/>
+<br/>
 
 ### Uruchamianie
 Wystarczy uruchomić `main.py` (skorzystałem z moduły pytest do testowania).
